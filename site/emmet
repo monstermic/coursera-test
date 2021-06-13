@@ -1,0 +1,28 @@
+! + enter  (html template)
+
+section.content  (used for section with class)
+section#content   (section tag with id content)
+
+.title          (created with div)
+#title           (created with div)
+
+nested
+
+section>div
+.flex-parent>.flex-child
+
+sibling
+.flec-parent>.flex-child+flex-child
+.flex-parent>.flex-child*2
+ul>li*5
+
+placeholder text
+lorem*10
+p>lorem*10
+
+(p>lorem20)*5
+
+
+wrap the text
+alt +z
+
