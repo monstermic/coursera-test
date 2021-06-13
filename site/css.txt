@@ -1,0 +1,49 @@
+Combining Selectors
+
+1. Every p element with class of big  ->  p.big{}
+2. Child selector(p element that is a direct child of article element)  ->  article > p{}
+3. Descendant selector (all p element inside an article element at any level) -.  article p{}
+4. Adjacent selector
+5. General sibling selector
+
+Pseudo class selector
+1. :link
+2. :visited
+3. :hover
+4. :active
+5. :nth-child() number, odd, even
+
+combination :nth-child():hover
+
+Styling
+1.inline (only use for tetsing)
+2.Internal Styling
+3.External Styling
+
+Conflict Resolution
+Concepts
+1. Origin (Last declaration wins)
+2. Merge  (Declaration merge, Merge effect from different origin)
+3. Inheritance (Property specifies on the parent will be inherit by its childs and beyond)
+4. Specificity (Most Specific slector wins)
+   Specificity Score
+   a. style=""
+   b. ID
+   c. Class or pseudo class
+   d. # of element tag
+   e. !important - ovewrites Specificity
+
+Styling Text
+1. font-family
+2. color: #(hexadecimal) (RRGGBB)
+3. font-style: (italic)
+4. font-weight: (0-900 or bold)
+5. font-size: (default is 16px)
+6. text-transform: (capitalize , lowercase etc)
+7. Text-align: (ex: center, right justified etc)
+
+relative font-sizing (no overwrite, instead accumulated)
+to overwrite need to decrease the size
+1. Percent - percent of default
+2. em - relative to letter m of the font currently in used
+3. rem - value x 16px

@@ -1,0 +1,18 @@
+header {
+  background-color: aqua;
+}
+nav {
+  background-color: bisque;
+}
+
+#example {
+  border-color: black;
+  border-style: solid;
+  border-width: 25px;
+  padding: 50px;
+  margin: 25px;
+  text-align: center;
+}
+
+link {
+}
