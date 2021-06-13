@@ -1,0 +1,14 @@
+1. stackoverflow.com
+2. jsfiddle.net
+3. codepen.io
+4. css-tricks.com
+
+
+Site to keep track of html changes
+1. www.w3.org/TR/html5
+2. caniuse.com
+3. validator.w3.org
+4. www.w3chools.com/browser/browser_stats.asp
+
+Kinds of content
+1. www.w3.org/TR/html5/dom.html#kinds-of-content
