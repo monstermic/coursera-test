@@ -1,0 +1,6 @@
+1.Acceptance criteria
+  Write down the functional requirements
+  What HTML markup
+  Correct heading tags
+2. Use codepen as reference
+3. css-tricks
