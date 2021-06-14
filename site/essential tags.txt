@@ -11,6 +11,7 @@ all of this are block elements
 List
 1. ul - unordered list 
 2. ol - odered list
+3. dl -
 
 
 HTML  Character entity references
@@ -24,7 +25,7 @@ Links
 1. internal and external links using a tag (href and title attributes)
    * a tag is inline
    * you need to add div to make it block element
-   * target="_blank" forces to ope the link in to a new tab
+   * target="_blank" forces to open the link in to a new tab
 
 2. Fragment identifier -  you can jump to any section of the page by declaring the id of the section and use #(id attribute name)
 

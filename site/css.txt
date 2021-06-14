@@ -47,3 +47,79 @@ to overwrite need to decrease the size
 1. Percent - percent of default
 2. em - relative to letter m of the font currently in used
 3. rem - value x 16px
+
+Box Model
+1.content
+2.padding
+3.border
+4.margin
+
+reset browser styling
+margin: 0;
+Padding: 0;
+
+to allow correct width including all borders and padding
+box-sizing: border box (not inehrited)
+
+universal selector - used to apply a css property to all elements
+* {}
+
+Cummulative Margin (horizontal)
+Margin collapse (largest margin wins - vertical)
+
+overflow: ( this is used to avoid overflow of content)
+
+
+Background Property
+1. Background-color
+2. Background-image
+3. Background-repeat
+4. Bacground-position
+5. Background
+
+Positioning by Floating
+floated element ( margin never collapse)
+                removed in the default document flow
+
+ clear:(left, right, both)  use to resume regular document    
+Use percent width to makethe content become responsive 
+
+
+Relative and Absolute Positioning
+1. Static positioning (default)
+2. Relative positioning (offset relative to the normal document flow)
+3. Absolute (removed in the normal document flow)(relatived to teh container)
+
+top bottom left right
+
+
+Media Queries (a style sheet within the style sheet)
+Basic syntax
+@media (max-width: 767px){
+   p{
+
+   }
+}
+
+1. max-width (common)
+2. min-width (common)
+3. orientation
+4. screen
+4. print
+
+can be combined by logical operators (and, or(,))
+*dont overlap boundaries
+base style first before media query
+
+
+Large device (1200px)
+Medium size  (992px and 1199px)
+
+
+Responsive web design
+Site designed to adapt its layout to the viewing environment by using fluid propportion-based-grids, flexible images, and CSS3 media Queries
+
+Most common layout (12 column grid responsive layout)
+use percentage as width
+Nested grid
+add meta tag viewport to avoid zooming
