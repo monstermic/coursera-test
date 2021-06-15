@@ -81,7 +81,7 @@ Positioning by Floating
 floated element ( margin never collapse)
                 removed in the default document flow
 
- clear:(left, right, both)  use to resume regular document    
+clear:(left, right, both)  use to resume regular document    
 Use percent width to makethe content become responsive 
 
 
@@ -122,4 +122,6 @@ Site designed to adapt its layout to the viewing environment by using fluid prop
 Most common layout (12 column grid responsive layout)
 use percentage as width
 Nested grid
-add meta tag viewport to avoid zooming
+add meta tag viewport to avoid zooming 
+
+
