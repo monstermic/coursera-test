@@ -1,0 +1,5 @@
+Download Bootstrap (css and js)
+Download Jquery
+
+In HTML declare the Bootstrap css then your custom css file
+Declare Jquery,Bootstrap.js last is your custom js file

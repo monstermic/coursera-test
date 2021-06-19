@@ -125,3 +125,9 @@ Nested grid
 add meta tag viewport to avoid zooming 
 
 
+Pano mag butas nang Background
+    background: 
+    radial-gradient(farthest-side,#09042A 99%,transparent)
+    75px 74px/ /* position */
+    150px 150px /* size*/
+    no-repeat fixed  #E78481;
