@@ -1,0 +1,313 @@
+Javascript
+
+Data types:
+1. String
+2. Integer
+3. Boolean
+4. Undefined
+5. Object
+
+Variable is just like a box where you can put any data.
+1. var name=(data)
+2. console.log(name)
+3. typeof (variable) // use to check the dat type of the variable
+
+Object is a collection of grouped variables
+1. var object = {};
+2. var person = {
+    name:"JM",
+    age: 26,
+    isGood: True;
+}
+3. console.log(JSON.stringify(person))
+4. To just call specific property of the object  use Object.property
+5. console.log(Object.values(person))
+
+Arrays use to store multiple values
+1. var names = ["Maria", "Berto", "Jose" ]
+2. array position , console.log(names[0])
+3. array length , console.log(name.length)
+4. looping in an array
+    for ( var n of names){
+        console.log(n);
+    }
+    
+    or
+
+    names.forEach(
+        function(n, index){
+    console.log(index + n)
+    }
+    );
+
+Arithmetic Operations
+1. Addition (+)
+2. Subtraction (-)
+3. Multiplication (*)
+4. Division (/)
+5. Modulus/Remainder (%)
+
+Functions it is a javascript procedure
+1. create a function , n1 and n2 are place holders/ variables / arguments used to hold the values passed from the invoke
+    function addNumbers(n1,n2){
+    console.log(n1+n2)
+    }
+
+2. call/invoke a function
+   addNumbers(10, 30)    10 and 20 are the arguments passed to the function 
+
+3. use function to return value and save it to a variable
+
+    function addNumbers(n1,n2){
+    var sum = n1 + n2;
+    return sum;                                   //return is use to pass the result of the function (any data type)
+    }
+
+    var total = addNumbers(11 + 12)          //  addNumbers() = return;
+    console.log(total);
+
+4. Search for Javascript built in functions
+   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+
+5. library
+   underscore.JS
+
+Loops
+1.  for (var i=0; i < 10 ; i++){       // variable start; condition to end; what to do
+    console.log(i)
+}
+
+2. Example with object
+   var person = [
+       {name:"alex", age:22},
+       {name:"alexa", age:23},
+   ];
+
+   for (var i=0; i < person.length; i++){
+       console.log(person[i].name);
+       console.log(person[i].age);
+       console.log("------------")
+   }
+
+3. Add the loop inside a function
+   a. create the function
+      function searchName(input){
+          var persons = [
+              {name:"JM", age: 26},{name:"Carl", age: 22},{name:"Kim",age: 21}
+          ];
+          for (var i=0; i<persons.length; i++){
+              if (persons[i].name == input){
+                  var a = persons[i];
+                  console.log("User Found!");
+                  console.log(a);
+                  break;
+              }
+              else{
+                  console.log("User not Found!")
+              }
+          }
+          
+      };
+
+      searchName("JM")
+
+    b. 
+
+          function searchName(input){
+          var persons = [
+              {name:"JM", age: 26},{name:"Carl", age: 22},{name:"Kim",age: 21}
+          ];
+          for ( var n of persons){
+              if (n.name == input){
+                  var a = n;
+                  console.log("User Found!");
+                  console.log(a);
+                  break;
+              }
+              else{
+                  console.log("User not Found!")
+              }
+          }
+          
+      };
+
+      searchName("JM")
+
+
+      c. NOTE: you cant use break if you use forEach, and forEach will iterate to all index
+        function searchName(input){
+          var persons = [
+              {name:"JM", age: 26},{name:"Carl", age: 22},{name:"Kim",age: 21}
+          ];
+              persons.forEach(function(n, index)
+              {
+                if (n.name == input){
+                  var a = n;
+                  console.log("User Found!");
+                  console.log(a);
+              }
+                else{
+                  console.log("User not Found!")
+              }
+             });
+
+              
+        };
+
+      searchName("JM")
+
+While Loops (never runs when false)
+1. Infinite loop
+    while(true){
+        console.log("running")
+    };
+
+2.  var number = 0;
+    while (number<100){
+        console.log(number)
+        number++;
+    }
+
+DO while loop (run atleast once when false)
+ 1.  
+ var num = 0;
+   do{
+       num++;
+       console.log(num)
+   }while(num < 100);
+
+Break and Continue
+1. Break allow you to break out of the loop before it finished
+
+    var number = 0;
+    while(number < 5){
+        number++;
+        if (number == 3){
+        console.log(number);
+        break;
+        }
+    }
+2. Continue will allow you to go back, and continue to iterate and not execute the function until the false
+    var number = 0;
+    while(number < 5){
+        number++;
+        if (number < 3){
+        continue;   
+        }
+        
+    }
+
+If Statements allows us to execute a line of code if the specified condition are met(true)
+1. var person = {name:"JM",age:26}
+   if (person.age<18){
+       console.log("You are a Minor!")
+   }
+   else if (person.age > 18 && person.age < 60 ){
+       console.log("You are an adult!")
+   }
+
+   else{
+       console.log("Sorry Grandpa !")
+   }
+
+Switch Statements, This is used if you have multiple else statements
+1. var person = {name:"JM",age:26}
+   switch(true){
+       case (person.age < 18):
+            console.log("You are a Minor!");
+            break;
+       case (person.age > 18 && person.age < 60):
+            console.log("You are an adult!");
+            break;
+       default:
+            console.log("Sorry Grandpa !");
+            break;
+   }
+
+2. var person = {name:"JM",age:26}
+   switch(person.age){
+       case 17:
+            console.log("JM is about to become adult!");
+            break;
+       case 18:
+            console.log("JM is an adult!");
+            break;
+       default:
+            console.log("I dont Know!");
+            break;
+   }
+
+Comparison and Logical Operators
+
+Comparison operators
+1. == (equal)
+2. <  (lessthan)
+3. <= (lessthan or equal)
+4. >  (greaterthan)
+5. >=  (greaterthan or equal)
+6. !=  (not equal to)
+
+Logical operators
+1. && (and)
+2. || (or)
+3. !  (not)   ex console.log(!10 == 10)  = false   ( flips boolean )
+
+Equality without Coercion (===)
+
+w/ type coercion
+(Dangerous)
+console.log(0 == false)      // true because js tries to convert int 0 as false
+console.log("0" == false)    // true because js tries to convert string 0 as false
+console.log(1 == "1")        // true because js tries to convert int 1 as string 1
+
+w/out type coercion (===)
+console.log(0 === false)
+console.log("0" === false)
+console.log(1 === "1")
+
+Single and Double Qoutes and Semi column
+1. Single and double qoutes work exactly the same (usage depends on preference)
+2. Semi column is not required (usage depends on preference)
+3. ESLint use to detect or fix problems in JS
+
+Map | Filter | Reduce (will be useful for react.js or vue.js)
+1. Map (Transform), will execute the function to all element in the array
+   var map = [1,2,3,4,5].map(function(n)
+   {
+       return n*2;
+   });
+
+   console.log(map);
+
+2. Filter (Return Boolean)
+   var filter = [1,2,3,4,5].filter(function(n)
+   {
+       return n%2 == 0;   // return n/2 with no remainder(modulus)
+   });
+
+   console.log(filter);
+
+3. Reduce(Reduce the elements inside the array into 1)
+   var reduce = [1,2,3,4,5].reduce(function(accumulator,current)
+   {
+       return accumulator + current;   // accumulator = saves accumulate data per iteration
+   });
+
+   console.log(reduce);
+
+
+
+4. applied to function
+
+function nameSearch(input){
+    var persons = [
+              {name:"JM", age: 26},{name:"Carl", age: 22},{name:"Kim",age: 21}];
+
+              var reduce = persons.filter(function(n){
+                  return n.name == input;
+              });
+              console.log(reduce)
+}
+
+nameSearch("JM")
+
